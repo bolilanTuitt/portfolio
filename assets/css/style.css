@@ -1,0 +1,46 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	/*font-family: 'Raleway', sans-serif;*/
+}
+
+#port-jumbo{
+	border:8px solid #007bff;
+	border-radius: 10px;
+	width: 60%;
+	padding: 8em 4em;
+}
+
+#jumbo-div{
+	padding-top: 10%;
+	height: 100vh;
+	/*background-color: #333;*/
+	background-image: url("../images/keyboard.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	
+	
+}
+
+
+.jumbotron h1{
+	color: #f2f2f2;
+}
+
+.btn a{
+	text-decoration: none;
+	color: #f2f2f2;
+}
+
+.bg{
+	background-image: url("../images/kiss.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-attachment: local;
+	background-position: center center;
+	background-size: auto;
+
+}
