@@ -9,28 +9,31 @@
 	/*font-family: 'Concert One', cursive;*/
 	/*font-family: 'Hammersmith One', sans-serif;*/
 	/*font-family: 'Major Mono Display','Teko', monospace;*/
-	font-family: 'Ubuntu', sans-serif;
+	font-family: monospace;
+	background-color: #303030;
+	
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+
+.normal-font{
+	font-size: 15px;
 }
 
 #port-jumbo{
-	/*border:8px solid #007bff;*/
+	
 	border-radius: 10px;
-	width: 60%;
+	width: 100%;
 	padding: 8em 4em;
 }
 
-#jumbo-div{
+.jumbo-div{
 	padding-top: 10%;
 	height: 100vh;
-	/*background-color: #333;*/
-	background-color: #303030;
-	/*background-image: url("../images/keyboard.jpg");*/
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center center;
-	
-	
+	background-color: #303030;	
 }
 
 
@@ -43,15 +46,17 @@
 	color: #f2f2f2;
 }
 
-.bg{
-	background-image: url("../images/kiss.png");
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-attachment: local;
-	background-position: center center;
-	background-size: auto;
 
+
+.main{
+	background-color: lightgrey;
+	height: 100vh;
+	margin-left: 250px;
+	
+	
+	
 }
+	
 
 .pink{
 	color: #E42CE7;
@@ -77,3 +82,87 @@
 }
 
 
+.nav{
+	background-color: white;
+	height: 100%;
+	width: 250px;
+	position: fixed;
+}
+
+ul > li{
+	list-style: none;
+	background-color: white;
+	margin-bottom: 5px;
+	line-height: 48px; /*default font-size is 16px. 16*3 =48px*/
+	text-align: center;
+	
+
+}
+
+
+ul> li:hover{
+	background-color: #A9A9A9;/* #CC7178;*/
+
+}
+
+ul> li:hover > a{
+	color: black;
+}
+
+.ul{
+	display: block;
+	background-color: white;
+	width: 100%;
+	margin-top: 70%;
+	
+
+}
+
+.link{
+	text-decoration: none; 
+	color: black;
+}
+
+.forCard{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+
+
+.typewriter h1{
+
+	/*color: #fff;*/
+  	font-family: monospace;
+ 	overflow: hidden; /* Ensures the content is not revealed until the animation */
+  	border-right: .15em solid white; /* The typwriter cursor */
+  	white-space: nowrap; /* Keeps the content on a single line */
+  	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  	letter-spacing: .15em; /* Adjust as needed */
+  	animation: 
+    	typing 4.5s steps(40, end),
+    	blinking-cursor .5s step-end infinite;
+
+
+	/*font-family: monospace;
+	letter-spacing: .15em;
+	margin: 0 auto;
+  	overflow: auto;
+  	white-space: no-wrap;
+  	border-right: .15em solid white;
+  	animation: typing 3.5s steps(40, end), blinking-cursor .5s step-end infinite;*/
+}
+
+
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blinking-cursor {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
