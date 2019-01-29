@@ -3,14 +3,17 @@
 	padding: 0;
 	box-sizing: border-box;
 	/*font-family: 'Raleway', sans-serif;*/
-}
-
-html{
-	scroll-behavior: smooth;
+	/*font-family: 'Lobster', cursive;*/
+	/*font-family: 'Pacifico', cursive;*/
+	/*font-family: 'Teko', sans-serif;*/
+	/*font-family: 'Concert One', cursive;*/
+	/*font-family: 'Hammersmith One', sans-serif;*/
+	/*font-family: 'Major Mono Display','Teko', monospace;*/
+	font-family: 'Ubuntu', sans-serif;
 }
 
 #port-jumbo{
-	border:8px solid #007bff;
+	/*border:8px solid #007bff;*/
 	border-radius: 10px;
 	width: 60%;
 	padding: 8em 4em;
@@ -20,7 +23,8 @@ html{
 	padding-top: 10%;
 	height: 100vh;
 	/*background-color: #333;*/
-	background-image: url("../images/keyboard.jpg");
+	background-color: #303030;
+	/*background-image: url("../images/keyboard.jpg");*/
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -56,3 +60,20 @@ html{
 .no-border{
 	border: none;
 }
+
+.red{
+	color: #FF0000;
+}
+
+.green{
+	color:#5DFC0A;
+}
+.yellow{
+	color:#FFFF00;
+}
+
+.blue{
+	color:#00BFFF;
+}
+
+
