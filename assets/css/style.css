@@ -5,6 +5,10 @@
 	/*font-family: 'Raleway', sans-serif;*/
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 #port-jumbo{
 	border:8px solid #007bff;
 	border-radius: 10px;
