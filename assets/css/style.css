@@ -10,7 +10,7 @@
 	/*font-family: 'Hammersmith One', sans-serif;*/
 	/*font-family: 'Major Mono Display','Teko', monospace;*/
 	font-family: monospace;
-	background-color: #303030;
+	/*background-color: #303030;*/
 	
 }
 
@@ -26,14 +26,19 @@ html{
 #port-jumbo{
 	
 	border-radius: 10px;
-	width: 100%;
+	width: 80%;
 	padding: 8em 4em;
 }
 
 .jumbo-div{
 	padding-top: 10%;
 	height: 100vh;
-	background-color: #303030;	
+	/*background-color: #303030;*/
+	background-image: url("../images/background.png");
+	/*background-size: cover;*/
+	background-repeat: no-repeat;
+	/*background-attachment: fixed;*/
+	/*background-position: center center;*/
 }
 
 
@@ -165,4 +170,23 @@ ul> li:hover > a{
 @keyframes blinking-cursor {
   from, to { border-color: transparent }
   50% { border-color: orange }
+}
+
+
+/*tablet*/
+@media only screen and (min-width: 401px) and (max-width: 960px){
+	
+#port-jumbo{
+	
+	border-radius: 10px;
+	width: 100%;
+	padding: 8em 4em;
+}
+
+}
+
+/*desktop*/
+
+@media only screen and (min-width: 961px){
+
 }
