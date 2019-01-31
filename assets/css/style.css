@@ -14,61 +14,98 @@
 	
 }
 
-html{
-	scroll-behavior: smooth;
+/*start navbar*/
+
+
+.nav{
+	background-color: #f1f1f1;
+	height: 100%;
+	width: 250px;
+	position: fixed;
+	border: 1px solid #ccc;
 }
 
+.nav button{
+	/*display: block;*/
+	background-color: #f1f1f1;
+	color: black;
+	width: 100%;
+	border: none;
+	outline: none;
+	text-align: center;
+	cursor: pointer;
+	transition: 0.3s;
+	height:40px;
+	/*margin-bottom: 5px;*/
+	/*line-height: 48px;*/
 
-.normal-font{
+}
+
+ul{
+	display: block;
+	width: 100%;
+	margin-top: 70%;
+}
+
+ul > li{
+	list-style: none;
+	background-color: #f1f1f1;
+	/*margin-bottom: 5px;*/
+	/*line-height: 48px; default font-size is 16px. 16*3 =48px*/
+	text-align: center;
+}
+
+.nav button:hover {
+  background-color: #ddd;
+}
+
+.nav button.active {
+  background-color: #ccc;
+}
+
+.navContent{
+	background-color: lightgrey;
+	height: 100vh;
+	margin-left: 250px;	
+}
+
+.navFont{
 	font-size: 15px;
 }
 
-#port-jumbo{
-	
-	border-radius: 10px;
+.bg{
+	padding-top: 10%;
+	height: 100vh;
+	background-repeat: no-repeat;
+}
+
+.bgHome{
+	background-image: url("../images/home.png");
+}
+
+.bgPortfolio{
+	background-image: url("../images/portfolio.png");
+}
+
+.bgAbout{
+	background-image: url("../images/about.png");
+}
+
+/*end navbar*/
+
+
+/*start home*/
+.port-jumbo{
 	width: 80%;
 	padding: 8em 4em;
 }
-
-.jumbo-div{
-	padding-top: 10%;
-	height: 100vh;
-	/*background-color: #303030;*/
-	background-image: url("../images/background.png");
-	/*background-size: cover;*/
-	background-repeat: no-repeat;
-	/*background-attachment: fixed;*/
-	/*background-position: center center;*/
-}
-
 
 .jumbotron h1{
 	color: #f2f2f2;
 }
 
-.btn a{
-	text-decoration: none;
-	color: #f2f2f2;
-}
-
-
-
-.main{
-	background-color: lightgrey;
-	height: 100vh;
-	margin-left: 250px;
-	
-	
-	
-}
-	
-
 .pink{
 	color: #E42CE7;
-}
-
-.no-border{
-	border: none;
 }
 
 .red{
@@ -85,57 +122,6 @@ html{
 .blue{
 	color:#00BFFF;
 }
-
-
-.nav{
-	background-color: white;
-	height: 100%;
-	width: 250px;
-	position: fixed;
-}
-
-ul > li{
-	list-style: none;
-	background-color: white;
-	margin-bottom: 5px;
-	line-height: 48px; /*default font-size is 16px. 16*3 =48px*/
-	text-align: center;
-	
-
-}
-
-
-ul> li:hover{
-	background-color: #A9A9A9;/* #CC7178;*/
-
-}
-
-ul> li:hover > a{
-	color: black;
-}
-
-.ul{
-	display: block;
-	background-color: white;
-	width: 100%;
-	margin-top: 70%;
-	
-
-}
-
-.link{
-	text-decoration: none; 
-	color: black;
-}
-
-.forCard{
-	display: flex;
-	flex-wrap: wrap;
-}
-
-
-
-
 .typewriter h1{
 
 	/*color: #fff;*/
@@ -159,6 +145,28 @@ ul> li:hover > a{
   	animation: typing 3.5s steps(40, end), blinking-cursor .5s step-end infinite;*/
 }
 
+.typewriterPortfolio h1{
+
+	color: white;
+  	font-family: monospace;
+ 	overflow: hidden; /* Ensures the content is not revealed until the animation */
+  	border-right: .15em solid white; /* The typwriter cursor */
+  	white-space: nowrap; /* Keeps the content on a single line */
+  	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  	letter-spacing: .15em; /* Adjust as needed */
+  	animation: 
+    	typing 4.5s steps(40, end),
+    	blinking-cursor .5s step-end infinite;
+
+
+	/*font-family: monospace;
+	letter-spacing: .15em;
+	margin: 0 auto;
+  	overflow: auto;
+  	white-space: no-wrap;
+  	border-right: .15em solid white;
+  	animation: typing 3.5s steps(40, end), blinking-cursor .5s step-end infinite;*/
+}
 
 
 
@@ -171,6 +179,27 @@ ul> li:hover > a{
   from, to { border-color: transparent }
   50% { border-color: orange }
 }
+/*end Home*/
+
+
+
+.no-border{
+	border: none;
+}
+.link{
+	text-decoration: none; 
+	color: black;
+}
+
+.forCard{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+
+
+
 
 
 /*tablet*/
